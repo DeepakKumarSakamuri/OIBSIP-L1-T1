@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Place</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #e0f7fa; /* Light blue background */
+        }
+
+        header {
+            background-color: #003f5f; /* Dark blue color */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #002b40; /* Darker blue color for hover */
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background-color: #003f5f; /* Dark blue color */
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .food-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .food-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .food-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .food-item h3 {
+            margin: 0;
+            padding: 1rem;
+        }
+
+        .food-item button {
+            padding: 0.5rem 1rem;
+            background-color: #003f5f; /* Dark blue color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+
+        .food-item button:hover {
+            background-color: #002b40;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h2 {
+            margin-bottom: 1rem;
+        }
+
+        .content p, .content ul {
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem;
+            background-color: #f0f8ff; /* Very light blue */
+            border-radius: 10px;
+            margin: 2rem auto;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 0.5rem 1rem;
+            background-color: #003f5f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #002b40;
+        }
+
+        .footer {
+            background-color: #003f5f; /* Darker blue for footer */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#order">Order</a>
+            <a href="#near">Near</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to Our Food Court</h1>
+    </section>
+
+    <section class="food-items" id="order">
+        <div class="food-item">
+            <img src="pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <button>Order</button>
+        </div>
+        <div class="food-item">
+            <img src="burger.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <button>Order</button>
+        </div>
+        <div class="food-item">
+            <img src="kfc.jpg" alt="KFC">
+            <h3>KFC</h3>
+            <button>Order</button>
+        </div>
+    </section>
+
+    <section class="content" id="near">
+        <h2>Near Us</h2>
+        <p>We are conveniently located at the heart of the city, making it easy for you to find us and enjoy our delicious food. Here are some nearby landmarks:</p>
+        <ul>
+            <li>Central Park - 500 meters</li>
+            <li>Main Street Station - 200 meters</li>
+            <li>City Mall - 1 km</li>
+        </ul>
+    </section>
+
+    <section class="content" id="about">
+        <h2>About Us</h2>
+        <p>Our food court was founded with the mission of bringing delicious, high-quality food to our community. We believe that food is more than just fuel for the body; it's a way to bring people together and create lasting memories.</p>
+        <p>Our menu features a wide variety of dishes, from classic favorites like pizza and burgers to healthy options like salads and smoothies. No matter what you're in the mood for, we've got something that will satisfy your cravings.</p>
+        <p>We are committed to using only the freshest ingredients, and our team of talented chefs is dedicated to creating dishes that are not only delicious but also beautifully presented.</p>
+    </section>
+
+    <section class="content" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Food Court. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
